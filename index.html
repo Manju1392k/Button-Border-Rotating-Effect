@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Border Rotating Effect</title>
+
+    <style>
+
+        body {
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        /* Centering the elements in container. */
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Btn sytling. */
+        .Btn{
+            border-radius: 6px;
+            padding: 10px 20px;
+            color: #000;
+            font-weight: bold;
+            background-color: transparent;
+            animation: BtnBorder 4000ms infinite;
+            border: 2px solid #fff;
+        }
+
+        /* Button border rotating effect. */
+        @keyframes BtnBorder {
+
+            0%{
+                border-top: 2px solid #fff;
+            }
+
+            25%{
+                border-right: 2px solid #FF5733;
+            }
+
+            50%{
+                border-bottom: 2px solid #FF5733;
+            }
+            
+            75%{
+                border-left: 2px solid #FF5733;
+            }
+
+            100%{
+                border-top: 2px solid #FF5733;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Div for container. -->
+    <div class="container">
+
+        <button class="Btn">Button</button>
+
+    </div>
+
+</body>
+
+</html>
